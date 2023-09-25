@@ -10,4 +10,4 @@
 # Pull base image 
 FROM tomcat 
 RUN cp -R /usr/local/tomcat/webapps.dist/* /usr/local/tomcat/webapps
-COPY ./*.war /usr/local/tomcat/webapps
+COPY webapp/target/devops.war /usr/local/tomcat/webapps
